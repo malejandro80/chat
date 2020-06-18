@@ -2,6 +2,7 @@
 
 import React, { Component } from 'react';
 import './App.css';
+import { service } from './services/initService';
 import ChatBoard from './components/ChatBoard';
 import ChatButton from './components/ChatButton';
 
@@ -19,10 +20,8 @@ class App extends Component {
   };
 
   componentDidMount() {
-    fetch('http://localhost:4000/example')
-      .then((response) => {
-        return response.json();
-      })
+    service
+      .getConf()
       .then((data) => this.setState({ primaryColor: data.color }));
   }
 
