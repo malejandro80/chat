@@ -9,12 +9,12 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      showBoard: false,
+      showBoard: '',
       primaryColor: '#1082ff',
       secondaryColor: '#ffffff',
     };
   }
-  handleButton = () => {
+  handleButton = (e) => {
     this.setState({ showBoard: !this.state.showBoard });
   };
 
@@ -29,12 +29,19 @@ class App extends Component {
   render() {
     return (
       <div className='App'>
-        <div className='chat-container'>
-          {/* <div className='message'>
+        <div
+          className={`chat-container ${
+            this.state.showBoard ? 'hide-background' : ''
+          }`}
+        >
+          <div className={`chat-message ${this.state.showBoard ? 'hide' : ''}`}>
             <h1>Call To Action</h1>
             <h4>Lorem ipsum dolor sit amet.</h4>
-          </div> */}
-          <ChatBoard primaryColor={this.state.primaryColor} />
+          </div>
+          <ChatBoard
+            primaryColor={this.state.primaryColor}
+            showBoard={this.state.showBoard}
+          />
           <ChatButton
             handleButton={this.handleButton}
             primaryColor={this.state.primaryColor}

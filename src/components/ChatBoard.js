@@ -7,11 +7,12 @@ import React, { Component } from 'react';
 class ChatBoard extends Component {
   constructor(props) {
     super();
-    this.state = { show: true };
+    this.state = { show: false };
   }
   render() {
+    console.log(this.state.show);
     return (
-      <div className={this.state.show ? 'board-show' : 'board-hide'}>
+      <div className={`board ${this.props.showBoard ? 'board' : 'hide'}`}>
         <div className='header' style={{ background: this.props.primaryColor }}>
           <div className='header-operators'>
             <img
