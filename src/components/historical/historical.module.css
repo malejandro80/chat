@@ -1,0 +1,60 @@
+/** @format */
+
+.historicalHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0rem 0.3rem;
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
+.historicalHeader > a {
+  text-decoration: none;
+  color: black;
+}
+
+.historicalItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.6rem;
+  font-weight: 500;
+  padding: 0.5rem 0.5rem;
+}
+.historicalContent {
+  height: 10rem;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.left > span {
+  margin-left: 0.3rem;
+}
+
+.hr {
+  background-color: #afafb2;
+  height: 0.5px;
+  width: 100%;
+}
+
+.historicalItem img {
+  width: 25px;
+  border-radius: 25px;
+}
+
+/*message button*/
+
+.btnMsj {
+  width: 100%;
+  text-align: left;
+  align-items: center;
+  display: flex;
+}
+.msjIcon {
+  font-size: 0.9rem;
+  margin-right: 0.2rem;
+}

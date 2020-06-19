@@ -1,17 +1,18 @@
 /** @format */
 
 import React, { Component } from 'react';
+import styles from './ChatButton.module.css';
 
 class ChatButton extends Component {
   render() {
     const { handleButton } = this.props;
     return (
       <button
-        className='btn'
+        className={`btn ${styles.btnChat}`}
         onClick={handleButton}
         style={{ background: this.props.primaryColor }}
       >
-        Call to Action
+        <i class='fas fa-comments'></i>
       </button>
     );
   }

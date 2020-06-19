@@ -1,0 +1,22 @@
+/** @format */
+
+.lastItem {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.lastItem h4 {
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.lastItem p {
+  font-size: 1rem;
+  font-weight: 200;
+  margin-bottom: 1rem;
+}
+
+.ctaButton {
+  width: 100%;
+  text-align: center;
+}

@@ -1,0 +1,54 @@
+/** @format */
+
+.board {
+  width: 21rem;
+  background: white;
+  border-radius: 1rem 1rem 0.3rem 0.3rem;
+  margin-bottom: 0.5rem;
+  position: relative;
+  height: 70vh;
+}
+
+.hide {
+  display: none;
+}
+
+.header {
+  background: #1082ff;
+  height: 10rem;
+  border-radius: 1rem 1rem 0rem 0rem;
+}
+
+.boardContent {
+  position: absolute;
+  top: 0;
+  overflow-y: scroll;
+  max-height: 100%;
+}
+
+.boardContent::-webkit-scrollbar {
+  display: none;
+}
+.boardContent > * {
+  margin: 1rem;
+}
+
+.footer {
+  border-radius: 0rem 0rem 0.3rem 0.3rem;
+  display: flex;
+  justify-content: center;
+  border: 0.5px solid #afafb2;
+  padding: 0.15rem 0rem;
+  align-items: center;
+  position: absolute;
+  background: white;
+  width: 100%;
+  bottom: 0;
+  color: #868686;
+}
+
+.footer span {
+  font-size: 0.6rem;
+  font-weight: 500;
+  margin-left: 0.2rem;
+}

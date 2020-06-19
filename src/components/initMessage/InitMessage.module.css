@@ -1,0 +1,20 @@
+/** @format */
+
+.icon {
+  font-size: 1.5rem;
+}
+
+.boardMessage > h4 {
+  margin: 0.3em 0rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.boardMessage > span {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.boardMessage {
+  color: white;
+}

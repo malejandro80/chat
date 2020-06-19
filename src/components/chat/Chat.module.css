@@ -1,0 +1,13 @@
+/** @format */
+.messagescontent {
+  width: 100%;
+  height: 12rem;
+  overflow: scroll;
+}
+
+.block {
+  width: 80%;
+  height: 50px;
+  background: blue;
+  margin: 1rem;
+}
